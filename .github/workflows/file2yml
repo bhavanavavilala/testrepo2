@@ -1,13 +1,13 @@
-name: firstworkflow
+name: file2
 on: workflow_dispatch 
 jobs:
-  Deploy-to-Dev:
+  Deploy-to-QA:
     runs-on: ubuntu-latest
     environment: Development
     steps:
       - name: deploy
         run: echo "Develeopment changes are pushed to Dev env"
-  Deploy-to-QA:
+  Deploy-to-Dev:
     runs-on: ubuntu-latest
     steps:
       - name: deploy2
