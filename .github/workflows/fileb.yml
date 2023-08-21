@@ -1,0 +1,19 @@
+name: fileb
+on: workflow_dispatch 
+jobs:
+  Deploy-to-Dev:
+    runs-on: ubuntu-latest
+    environment: Development
+    steps:
+      - name: deploy
+        run: echo "Develeopment changes are pushed to Dev env"
+  Deploy-to-QA:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy2
+        run: echo "Production deployment successful" 
+  Deploy-to-Prod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy2
+        run: echo "Production deployment successful" 
